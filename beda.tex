@@ -1,0 +1,76 @@
+\documentclass[danish,a4paper,11pt]{scrartcl}
+\usepackage{graphicx,xcolor}
+\newcommand{\JustifiedLine}[2][1]{\resizebox{#1\linewidth}{!}{#2}} 
+\usepackage[top=2cm,left=3.5cm,right=3.5cm, bottom=3cm, paperheight=32cm, paperwidth=19.77cm]{geometry}
+\usepackage{fontspec}
+\setmainfont[ Ligatures={TeX, Rare}
+            , BoldFont={MinionPro-BoldSubh}
+            ]{Minion Pro}
+\pagestyle{empty}
+
+\definecolor{pageColor}{HTML}{D0C8B0}
+\pagecolor{pageColor}
+
+\usepackage{fontspec}
+\input Eileen.fd
+\newcommand*\initfamily{\usefont{U}{Eileen}{xl}{n}}
+
+\newcommand{\spac}[2][40]{{\addfontfeature{LetterSpace=#1}#2}}
+\usepackage{lettrine}
+
+\newcommand{\fsize}[2]{{\fontsize{#1}{#1}\selectfont #2}}
+
+\begin{document}
+\begin{center}
+	\JustifiedLine{\spac{\bfseries BEDÆ ANGLO-}} \\[3mm]
+	\JustifiedLine[.75]{\textsc{\spac{\bfseries saxonis de natvura}}}\\[3mm]
+	\JustifiedLine[.45]{\textsc{\spac{\bfseries rervm liber}.}}\\[5mm]
+	\JustifiedLine[.4]{\textsc{\spac{argvmentvm}}}\\[3mm]
+	\emph{Naturas rerum uarias, labentis \& æui,}\\
+	\emph{Perstrinxi titulis tempora lata citis.}\\[5mm]
+\end{center}%
+%
+%
+%
+%
+\begin{center}
+	\fsize{16}{\textsc{\spac[20]{de qvadrifario opere dei}.}}\\
+	\fsize{16}{\textsc{\spac[20]{capvt primvm}.}}\\
+\end{center}
+\lettrine[lines=6]{\normalfont\initfamily
+	\fontsize{32mm}{32mm}\selectfont O}{ \kern.25em\spac[25]{peratio}} diuina, quæ ſecula creauit \& gubernat, quadriformi ratione diſtinguitur. Primo, quod hæc in uerbi dei diſ\-pen\-ſatione non facta, ſed æterna ſunt : qui nos, Apoſtolo teſte, ante tempora ſecularia prædeſtinauit in regnum. Secundo, qu\-od in materia informi pariter elementa mundi facta ſint, ubi qui uiuit in æternum, creauit omnia ſimul. Tertio, quod eadem materies, ſecundum cauſas ſimul creatas, non iam ſimul, ſed diſtinctione ſex primorum dierum in c{\oe}leſtem, terreſtremque creaturam formatur. Quarto, quod ex eiuſdem creaturæ feminibus, \& primordialibus cauſis totius ſeculi tempus naturali curſu preagitur,
+ubi pater uſque nunc operatur \& filius, ubi etiamo coruos paſcit, \& lilia ueſtit deus.
+
+\begin{center}
+	\begin{minipage}{.725\textwidth}
+		\noindent\fsize{16}{\textsc{\spac[20]{de mvndi formatione}. \hspace{\fill} \spac[20]{cap}. \spac[20]{ii}}}
+	\end{minipage}
+\end{center}
+\lettrine{I}{ \kern.25emn} ipſo quidem principio conditionis facta ſunt c{\oe}lum, terra, angeli, a\"er \& aqua de nihilo. Die autem primo lux facta eſt, \& ipſa de nihilo. Secundo, firmamentum in medio aquarum. tertio, ſpecies maris \& terræ, cum eis quæ terræ radicitus inhærent. Quarto, luminaria c{\oe}li de lumine primo die facto. Quinto natatilia \& uolatilia de aquis. Sexto reliqua animalia de terra, \& homo : carne quidem de terra, anima uero de nihilo creatus : qui in Paradiſo, quam dominus a principio plantauerat, coſtituitur. 
+\marginpar{\footnotesize\emph{Requies dei\\ septimo die.}}
+Septimo dominus requieuit, non a creaturæ gubernatione, cum in ipſo uiuamus, moueamur, \& ſimus, ſed a nouæ ſubſtantiæ creatione.
+%
+%
+%
+%
+\begin{center}
+	\begin{minipage}{.725\textwidth}
+		\noindent\fsize{16}{\textsc{\spac[20]{qvid sit mvndvs}. \hspace{\fill} \spac[20]{cap}. \spac[20]{iii}}}
+	\end{minipage}
+\end{center}
+\lettrine{M}{ \kern.25emvndus} eſt uniuerſitas omnis, quæ conſtat ex c{\oe}lo \& terra, quatuor elementis in ſpeciem orbis abſoluti globata : Igne, quo ſydera lucent: a\"ere, quo cuncta uiuentia ſpirant : quis, quæ terra cingendo, \& penetrando communiunt : atque ipſa terra, quæ mundi media atque ima, librata uolubili circa eam uniuersitate 
+\marginpar{\footnotesize\emph{Mvndvs ab\\elegantia.}}
+pendet immobilis. Verum Mundi nomine etiam c{\oe}lum a perfecta abſolutaque elegantia uocat : Nam \& apud Græcos ab ornatu \emph{κ\'{o}σμoς} appellatur.
+%
+%
+%
+%
+%
+\begin{center}
+	\begin{minipage}{.725\textwidth}
+		\noindent\fsize{16}{\textsc{\spac[20]{de elementis}. \hspace{\fill} \spac[20]{cap}. \spac[20]{iiii}}}
+	\end{minipage}
+\end{center}
+\lettrine{E}{ \kern.25em lementa} ſibimet ſicut natura, ſic etiam ſitu differunt. Terra enim ut grauiſſima, \& quæ ab alia natura ſufferri non poſſit, imum in creaturis obtinet locum. Aqua uero quanto leuior terra, tanto eſt a\"ere grauior : Qui ſi forte aquis in uaſe aliquo ſubdatur, ſtatim ad ſuperiora ut leuior euadit. Ignis quoque \hspace{\fill}
+  [a materialiter]
+\end{document}
