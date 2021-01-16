@@ -1,7 +1,7 @@
 \documentclass[12pt]{article}
 \usepackage{graphicx,xcolor}
 \newcommand{\JustifiedLine}[2][1]{\resizebox{#1\linewidth}{!}{#2}} 
-\usepackage[ top=4cm
+\usepackage[ top=3cm
            , left=3.5cm
            , right=3.5cm
            , bottom=3.75cm
@@ -15,6 +15,8 @@
             , BoldFont={MinionPro-BoldSubh}
             ]{Minion Pro}
 \pagestyle{empty}
+
+\usepackage{pgfornament}
 
 \newfontfamily{\jap}{TakaoMincho}
 \definecolor{pageColor}{HTML}{D0C8B0}
@@ -47,7 +49,11 @@
 \JustifiedLine[.725]{\scshape in form of linear combinations $a\otimes b+c\otimes d$.}
 \end{center}
 
-\vspace{1.75cm}
+\vspace{.875cm}
+\begin{center}
+  \pgfornament[width=.725\linewidth]{85}
+\end{center}
+\vspace{.875cm}
 \lettrine[lines=6]{\normalfont\initfamily\fontsize{32mm}{32mm}\selectfont D}{ \kern.25em\spac[25]{irect sum}}:
 cronotopo,
 spazio delle configurazioni,
@@ -184,4 +190,8 @@ saõ Lazzaro \emph{\&} Omolu;
 santa Barbara \emph{\&} Yansā;
 saõ Bartolomeo \emph{\&} Oxumarê;
 demonio \emph{\&} exu.
+\vspace{.875cm}
+\begin{center}
+  \pgfornament[width=.725\linewidth]{85}
+\end{center}
 \end{document}
