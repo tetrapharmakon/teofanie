@@ -1,22 +1,25 @@
-\documentclass[danish,a4paper,12pt]{article}
+\documentclass[12pt]{article}
 \usepackage{graphicx,xcolor}
 \newcommand{\JustifiedLine}[2][1]{\resizebox{#1\linewidth}{!}{#2}} 
-\usepackage[ top=2cm
+\usepackage[ top=4cm
            , left=3.5cm
            , right=3.5cm
-           , bottom=3cm
+           , bottom=3.75cm
            , paperheight=32cm
            , paperwidth=19.77cm
            ]{geometry}
-\usepackage{fontspec}
+\usepackage[no-math]{fontspec}
+\usepackage{mathspec}
+\setallmainfonts(Digits,Latin){Minion Pro}
 \setmainfont[ Ligatures={TeX, Rare}
             , BoldFont={MinionPro-BoldSubh}
             ]{Minion Pro}
 \pagestyle{empty}
 
+\newfontfamily{\jap}{TakaoMincho}
 \definecolor{pageColor}{HTML}{D0C8B0}
 \pagecolor{pageColor}
-\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{amsmath,amssymb,amsfonts, hyphenat}
 \newcommand{\spac}[2][40]{{\addfontfeature{LetterSpace=#1}#2}}
 \usepackage{lettrine}
 
@@ -25,12 +28,26 @@
 \input Eileen.fd
 \newcommand*\initfamily{\usefont{U}{Eileen}{xl}{n}}
 
+\definecolor{crimsonglory}{rgb}{0.75, 0.0, 0.2}
 \usepackage{enumitem}
 \setlist[itemize]{topsep=0pt, itemsep=-2pt}
 \begin{document}
-Intuition on the difference between drect sum $\textit{V}\oplus \textit{W}$ of spaces, and tensor product $\textit{V}\otimes \textit{W}$. In the direct sum, the various realisations or theophanies are mutually exclusive, while in the tensor produc the primary identities are preserved and new structural attributes, irreducible to the initial ones, appear.
 
-\vspace{2cm}
+\vspace{\fill}
+\begin{center}
+\noindent%
+\JustifiedLine[.725]{\lettrine[lines=2]{\color{crimsonglory}I}{ntuition}}\\
+\JustifiedLine[.725]{\scshape on the difference between direct sum}\\
+\JustifiedLine[.725]{\scshape $V\oplus W$ of spaces, and tensor product $V\otimes W$. }\\
+\JustifiedLine[.725]{\scshape In the direct sum, the various realisations }\\
+\JustifiedLine[.725]{\scshape or theophanies are mutually exclusive, while }\\
+\JustifiedLine[.725]{\scshape in the tensor produc the primary identities }\\
+\JustifiedLine[.725]{\scshape are preserved and new structural attributes, }\\
+\JustifiedLine[.725]{\scshape irreducible to the initial ones, appear.}
+\JustifiedLine[.725]{\scshape in form of linear combinations $a\otimes b+c\otimes d$.}
+\end{center}
+
+\vspace{1.75cm}
 \lettrine[lines=6]{\normalfont\initfamily\fontsize{32mm}{32mm}\selectfont D}{ \kern.25em\spac[25]{irect sum}}:
 cronotopo,
 spazio delle configurazioni,
@@ -43,124 +60,128 @@ alonso quijana \emph{\&} cavaliere della trista figura \emph{\&} cavaliere dei l
 li corni della fiamma antica,
 lucio \emph{\&} l'asino,
 shen te \emph{\&} shui ta,
-medardo di terralba,
-compagno dell'omino: savio \emph{\&} ubriaco,
-moonlight \emph{\&} doc halliday,
-shmoo,
-proteo,
-Agobardo di Lione \emph{\&} Agobardo di Lisieux,
-ran-ma,
-sautone,
-terzo artiglieria di montagna,
-quirrell \emph{\&} voldemort,
-calvin \emph{\&} spiff \emph{\&} tracer bullet \emph{\&} stupendousman,
-tiresia,
-teofanie di ódhinn,
-alejandro de vega \emph{\&} el zorro,
-ceni \emph{\&} cereo,
-ifide,
-proserpina \emph{\&} ecate \emph{\&} selene,
-mandricardo,
-leonard zelig,
+Medardo of Terralba,
+fellow of the chap: wise \emph{\&} drunk,
+Moonlight \emph{\&} Doc Halliday,
+Shmoo,
+Proteo,
+Agobardus Lugdunensis \emph{\&} Agobardus Lexoviorum,
+Ranma Saotome,
+il terzo artiglieria di montagna,
+Quirrell \emph{\&} Voldemort,
+Calvin \emph{\&} Spiff \emph{\&} Tracer Bullet \emph{\&} Stupendousman,
+Tiresia,
+esser veltro e lione al tempo istesso,
+\'Oðinn's theophanies,
+Alejandro de Vega \emph{\&} el zorro,
+Ceni \emph{\&} Cereo,
+Ifide,
+Proserpina \emph{\&} Ecate \emph{\&} Selene,
+Mandricardo,
+Leonard Zelig,
 Sevérine \emph{\&} Belle de jour,
 Zhu Bajie Tiānpéng \emph{\&} Yuánshu$\check{\text{a}}$i (36 trasformazioni),
 Sha Wujing \emph{\&} Shā-héshàng,
-Sun Wukong (72 trasformazioni),
+Sun Wukong (72 transformations),
 L$\check{\text{\i}}$ Sh\=uméng \emph{\&} L$\check{\text{\i}}$ Jìnhái \emph{\&} L$\check{\text{\i}}$ Yúnhè \emph{\&} L$\check{\text{\i}}$ Hè \emph{\&} Lán Píng \emph{\&} Jiāng Qīng \emph{\&} L$\check{\text{\i}}$ Jìn \emph{\&} L$\check{\text{\i}}$ Rùnqīng,
-Berlusconi,
+Berlusconi.
 
 \medskip
 \lettrine[lines=4]{\normalfont\initfamily\fontsize{20mm}{20mm}\selectfont Z}{ \kern.25em\spac[25]{evs}}:
-uomo: hera;
-serpente: rea/demetra/persefone/proserpina;
-quaglia: latona;
-aquila: ganimede/talia/asterie;
-cigno: nemesi/leda;
-fiamma: egina;
-formica: eurimedusa;
-stallone: dia;
-pioggia d'oro: danae;
-anfitrione: alcmena;
-toro: europa;
-nebbia: io;
-pastore: mnemosine;
-satiro: antiope;
-artemide: callisto;
-tutteccose: semele.
+man: Hera;
+snake: Rhea\fshyp{}Demetra\fshyp{}Persefone\fshyp{}Proserpina;
+quail: Latona;
+eagle: Ganimede\fshyp{}Talia\fshyp{}Asterie;
+swan: Nemesi\fshyp{}Leda;
+flame: Egina;
+ant: Eurimedusa;
+stallion: Dia;
+golden rain: Danae;
+Amphitryon: Alcmena;
+bull: Europe;
+fog: Io;
+shepherd: Mnemosine;
+satyre: Antiope;
+Artemis: Callisto;
+bolt: Semele.
 
 \medskip
 \lettrine[lines=4]{\normalfont\initfamily\fontsize{20mm}{20mm}\selectfont F}{ \kern.25em\spac[25]{reiya}}:
-mardöll, hörn, genf, syr.
+Mardöll, Hörn, Genf, Syr.
 
 \vspace{1.75cm}
 \lettrine[lines=4]{\normalfont\initfamily\fontsize{20mm}{20mm}\selectfont O}{ \kern.25em\spac[25]{ðhinn}} [54 theophanies]:
-allfödhr, valfödhr;
-hangagudh, haptagudh, farmagudh;
-grímr, gangleri, herian, hiálmberi;
-thekkr, thridhi, thudhr, udhr;
-helblindi, har, sadtr, svipall, sanngetall;
-herteitr, hnikarr, váfudhr, hroptatýr;
-bileygr, báleygr, bölverkr, fiölnir;
-grímmir, glapsvidhr, fiölsvidhr;
-sídhhöttr, s'idhskeggr, sigfödhr, hnikudhr;
-atrídhr, farmatýr. gautr, veratýr;
-óski, ómi, ianhár, biflindi;
-göndlir, hárbardhr, svidhurr, svidhrir;
-ialkr, kialarr, vidhurr, thrór;
-yggr, thundr, vakr, skilvingr.
+Allföðr, Valföðr;
+Hangaguð, Haptaguð, Farmaguð;
+Grímr, Gangleri, Herian, Hiálmberi;
+Thekkr, Thriði, Thuðr, Uðr;
+Helblindi, Har, Sadtr, Svipall, Sanngetall;
+Herteitr, Hnikarr, Váfuðr, Hroptatýr;
+Bileygr, Báleygr, Bölverkr, Fiölnir;
+Grímmir, Glapsviðr, Fiölsviðr;
+Síðhöttr, S'iðskeggr, Sigföðr, Hnikuðr;
+Atríðr, Farmatýr. gautr, Veratýr;
+Óski, Ómi, Ianhár, Biflindi;
+Göndlir, Hárbarðr, Sviðurr, Sviðrir;
+Ialkr, Kialarr, Viðurr, Thrór;
+Yggr, Thundr, Vakr, Skilvingr.
 
 \newpage
+{}
+
+\vspace{\fill}
+
 \lettrine[lines=6]{\normalfont\initfamily\fontsize{32mm}{32mm}\selectfont D}{ \kern.25em\spac[25]{irect product}}:
-  funzioni di due variabili;
-  stati di spin e momento orbitale;
-  sistemi simbiotici;
-  trinità di Abelardo;
-  le 10 sefirot;
-  androgino;
-  agnolo di brunelleschi;
-  buoso donati;
+  functions of two variables;
+  spin \emph{\&} orbital momentum;
+  symbiotic systems;
+  Abelardus' tri\-ni\-ty;
+  the ten Sephirot;
+  androgynous;
+  Agnolo di Bru\-nel\-le\-schi;
+  Buoso Donati;
   Cacania;
-  fiere isnelle;
+  le fiere isnelle;
   la fiera ch'è sola persona in due nature;
   Asterione;
-  Chimera;
-  Gorgone;
+  Chimæra;
+  Gorgo;
   Sirena;
-  minotauro;
-  grifone;
-  ippogrifo;
-  sfinge;
-  ermafrodito;
-  i gialappa;
-  scilla;
-  nanda, shridaman \emph{\&} sita;
-  daltanious (Mirai Robo Daltanias) [Kento Tate\emph{\&} Dani Hibari];
-  god sigma [dantou shiya \emph{\&} Jurii Yakou \emph{\&} Yoshiryou Kensaku];
-  Agilulfo Emo Bertrandino dei Guildiverni e degli Altri di Corbentraz e Sura, cavaliere di Selimpia Citeriore e Frez;
+  Minotaur;
+  griffin;
+  hippogriff;
+  Sphynx;
+  hermaphro\-dite;
+  the Gialappa's;
+  Scilla;
+  Nanda, Shridaman \emph{\&} Sita;
+  Daltanious ({\jap{未来} \jap{ロボ} \jap{ダルタ} \jap{ニアス}}) [Kento Tate \emph{\&} Dani Hibari];
+  God Sigma [Dantou Shiya \emph{\&} Jurii Yakou \emph{\&} Yoshiryou Kensaku];
+  Agilulfo Emo Bertrandino dei Guildiverni e degli Altri di Corbentraz e Sura, cavaliere di Selimpia Citeriore e Fez;
   Animagi (Sirius Black Padfoot, Remus John Moony Lupin;
   Peter Pettigrew Wormtail, Minerva McGonagall, James Potter;
   Berlusconi.
 
-\medskip
-\lettrine[lines=4]{\normalfont\initfamily\fontsize{20mm}{20mm}\selectfont M}{ \kern.25em\spac[25]{aithuna}} [tantrismo tibetano]:
-amitābha - pāndāra; 
-anoghasiddhi - tārā; 
-vajradhara - tārāa; 
-vajrasatva - tārā; 
-kalachakra - vishvamata.
+\vspace{.75cm}
+\lettrine[lines=4]{\normalfont\initfamily\fontsize{20mm}{20mm}\selectfont M}{ \kern.25em\spac[25]{aithuna}} [Tibetan tantra]:
+Amitābha - pāndāra; 
+A\-no\-gha\-sid\-dhi - tārā; 
+Vajradhara - tārāa; 
+Vajrasatva - tārā; 
+Kalachakra - vishvamata.
 
-\medskip
+\vspace{1.25cm}
 \lettrine[lines=4]{\normalfont\initfamily\fontsize{20mm}{20mm}\selectfont O}{ \kern.25em\spac[25]{rixàs}} del candomblé:
-cosma e damiano \emph{\&} ibej\'es;
-bonfim \emph{\&} oxolufā;
-bonfim \emph{\&} oxaguiā;
-NS candelora \emph{\&} oxun;
-NS concesao \emph{\&} yemanjá;
-saõ georje \emph{\&} oxóssi;
-saõ gerolamo \emph{\&} xangô;
-saõ antonio \emph{\&} ogun;
-sav lazzaro \emph{\&} omolu;
-santa barbara \emph{\&} yansā;
-saõ bartolomeo \emph{\&} oxumarê;
+Cosma e Damiano \emph{\&} ibej\'es;
+Bonfim \emph{\&} Oxolufā;
+Bonfim \emph{\&} Oxaguiā;
+NS candelora \emph{\&} Oxun;
+NS concesao \emph{\&} Yemanjá;
+saõ Georje \emph{\&} Oxóssi;
+saõ Gerolamo \emph{\&} Xangô;
+saõ Antonio \emph{\&} Ogun;
+saõ Lazzaro \emph{\&} Omolu;
+santa Barbara \emph{\&} Yansā;
+saõ Bartolomeo \emph{\&} Oxumarê;
 demonio \emph{\&} exu.
 \end{document}
